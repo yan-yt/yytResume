@@ -356,11 +356,13 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: Microsoft YaHei;
 }
 
-.fh5co-social-icons {
+/* home icon */
+
+.home-icon {
   margin: 0;
   padding: 0;
 }
-.fh5co-social-icons li {
+.home-icon li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -369,7 +371,7 @@ h1, h2, h3, h4, h5, h6, figure {
   zoom: 1;
   *display: inline;
 }
-.fh5co-social-icons li a {
+.home-icon li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -378,8 +380,8 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 10px;
   padding-right: 10px;
 }
-.fh5co-social-icons li a i {
-  font-size: 20px;
+.home-icon li a img {
+  width: 20%;
 }
 
 #fh5co-about .fh5co-social-icons {
@@ -1307,4 +1309,13 @@ input[type="text"] {
   background-color: #cccccc !important;
   opacity: 0.9;
 }
+
+/* home icon */
+/* .home-icon {
+  padding: 0;
+  margin: 0;
+}
+.home-icon li {
+
+} */
 /*# sourceMappingURL=style.css.map */
