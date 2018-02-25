@@ -11,7 +11,8 @@
 *
 * ======================================================= */
 body {
-  font-family: "Space Mono", Arial, serif;
+  /* font-family: "Space Mono", Arial, serif; */
+  font-family: "Microsoft YaHei" ! important;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -123,6 +124,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc h1,
 .fh5co-cover .display-tc h2,
 .fh5co-cover .display-tc h3 {
+  font-family: "Microsoft YaHei";
   margin: 0;
   padding: 0;
   color: white;
@@ -588,6 +590,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .timeline-title {
+  font-family: "Microsoft YaHei";
   margin-top: 0;
 }
 
