@@ -23,10 +23,10 @@
 		}
 	};
 
-	
+	//背景占满整个浏览器
 	var fullHeight = function() {
 
-		if ( !isMobile.any() ) {
+		if ( !isMobile.any() ) {//判断是否是移动端
 			$('.js-fullheight').css('height', $(window).height());
 			$(window).resize(function(){
 				$('.js-fullheight').css('height', $(window).height());
@@ -36,7 +36,7 @@
 
 	// Parallax
 	var parallax = function() {
-		$(window).stellar();
+		$(window).stellar();//视差滚动
 	};
 
 	var contentWayPoint = function() {
@@ -65,7 +65,7 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 100, 'easeInOutExpo' );
+						},  k * 50, 'easeInOutExpo' );
 					});
 					
 				}, 50);
@@ -76,7 +76,7 @@
 	};
 
 
-
+	//小箭头 返回顶部
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
@@ -110,7 +110,7 @@
 			lineCap: 'butt',
 			barColor: '#FF9000',
 			trackColor:	"#f5f5f5",
-			size: 160,
+			size: 100,
 			animate: 1000
 		});
 	};
@@ -140,7 +140,7 @@
 		goToTop();
 		loaderPage();
 		fullHeight();
-		parallax();
+		//parallax();
 		// pieChart();
 		skillsWayPoint();
 	});

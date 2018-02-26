@@ -701,9 +701,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .chart {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 40px auto;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
   position: relative;
   text-align: center;
 }
@@ -1313,10 +1313,19 @@ input[type="text"] {
 }
 .overlay{
   background-color: #cccccc !important;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 /* 自我介绍 */
 .my-intro{
   font-family: "Microsoft YaHei";
+}
+/* 技能介绍 */
+.skill-list{
+  display: flex;
+  justify-content: center;
+}
+.skill-list ul li {
+  margin: 12px 0;
+  list-style: circle;
 }
