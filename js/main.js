@@ -2,6 +2,12 @@
 	
 	'use strict';
 
+	//loading
+	$(document).ready(function(){
+		$(".loadding").fadeOut("slow");
+	});
+
+
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -130,15 +136,15 @@
 
 
 	// Loading page
-	var loaderPage = function() {
-		$(".loadding").fadeOut("slow");
-	};
+	// var loaderPage = function() {
+	// 	$(".loadding").fadeOut("slow");
+	// };
 
 	
 	$(function(){
 		contentWayPoint();
 		goToTop();
-		loaderPage();
+		//loaderPage();
 		fullHeight();
 		//parallax();
 		// pieChart();
