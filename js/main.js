@@ -3,14 +3,10 @@
 	'use strict';
 
 	//loading
-	// $(document).ready(function(){
-	// 	$(".loadding").fadeOut("slow");
-	// });
-
 	$(document).ready(
 
-		document.onreadystatechange=function(){
-			if(document.readyState=="complete"){
+		document.onreadystatechange = function(){
+			if(document.readyState === "complete"){
 				$(".loadding").fadeOut("slow");
 			}
 		}
@@ -154,7 +150,6 @@
 	$(function(){
 		contentWayPoint();
 		goToTop();
-		//loaderPage();
 		fullHeight();
 		//parallax();
 		// pieChart();
