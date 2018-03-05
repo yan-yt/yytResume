@@ -20,6 +20,21 @@ body {
   background: #fff;
 }
 
+.navi{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  background-color: #000;
+}
+.navi{
+  width: 100%;
+}
+.navi ul li{
+  list-style: none;
+  float: left;
+  color: #fff;
+}
 #page {
   position: relative;
   overflow-x: hidden;
@@ -92,16 +107,17 @@ h1, h2, h3, h4, h5, h6, figure {
 	overflow:hidden;
 }
 #resume-header,
-.fh5co-cover {
+.resume-cover {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   height: 600px;
   width: 100%;
+  z-index: 2;
 }
 #resume-header .overlay,
-.fh5co-cover .overlay {
+.resume-cover .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -110,27 +126,27 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(255, 144, 0, 0.9);
 }
 #resume-header .display-t,
-.fh5co-cover .display-t {
+.resume-cover .display-t {
   width: 100%;
   display: table;
 }
 #resume-header  .display-tc,
-.fh5co-cover .display-tc {
+.resume-cover .display-tc {
   display: table-cell;
   vertical-align: middle;
   height: 600px;
 }
 #resume-header  .display-tc h1, #resume-header  .display-tc h2, #resume-header  .display-tc h3,
-.fh5co-cover .display-tc h1,
-.fh5co-cover .display-tc h2,
-.fh5co-cover .display-tc h3 {
+.resume-cover .display-tc h1,
+.resume-cover .display-tc h2,
+.resume-cover .display-tc h3 {
   font-family: "Microsoft YaHei";
   margin: 0;
   padding: 0;
   color: white;
 }
 #resume-header  .display-tc h1,
-.fh5co-cover .display-tc h1 {
+.resume-cover .display-tc h1 {
   font-family: "Kaushan Script", cursive;
   margin-bottom: 30px;
   font-size: 50px;
@@ -143,12 +159,12 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: rotate(-5deg); */
 }
 #resume-header  .display-tc h1 span,
-.fh5co-cover .display-tc h1 span {
+.resume-cover .display-tc h1 span {
   padding: 4px 15px;
   position: relative;
 }
 #resume-header  .display-tc h1 span:before,
-.fh5co-cover .display-tc h1 span:before {
+.resume-cover .display-tc h1 span:before {
   position: absolute;
   top: 40px;
   left: 0;
@@ -159,7 +175,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: -30px;
 }
 #resume-header  .display-tc h1 span:after,
-.fh5co-cover .display-tc h1 span:after {
+.resume-cover .display-tc h1 span:after {
   position: absolute;
   top: 40px;
   right: 0;
@@ -171,18 +187,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   #resume-header  .display-tc h1,
-  .fh5co-cover .display-tc h1 {
+  .resume-cover .display-tc h1 {
     font-size: 34px;
   }
   #resume-header  .display-tc h1 span:before,
-  .fh5co-cover .display-tc h1 span:before {
+  .resume-cover .display-tc h1 span:before {
     top: 28px;
     width: 20px;
     height: 3px;
     margin-left: -15px;
   }
   #resume-header  .display-tc h1 span:after,
-  .fh5co-cover .display-tc h1 span:after {
+  .resume-cover .display-tc h1 span:after {
     top: 28px;
     width: 20px;
     height: 3px;
@@ -190,25 +206,25 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #resume-header  .display-tc h2,
-.fh5co-cover .display-tc h2 {
+.resume-cover .display-tc h2 {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
 #resume-header  .display-tc h3,
-.fh5co-cover .display-tc h3 {
+.resume-cover .display-tc h3 {
   font-size: 16px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   #resume-header  .display-tc h3,
-  .fh5co-cover .display-tc h3 {
+  .resume-cover .display-tc h3 {
     font-size: 14px;
   }
 }
 #resume-header  .display-tc .profile-thumb,
-.fh5co-cover .display-tc .profile-thumb {
+.resume-cover .display-tc .profile-thumb {
   background-size: cover !important;
   background-position: center center;
   background-repeat: no-repeat;
@@ -223,71 +239,13 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #resume-header  .display-tc .fh5co-social-icons li a,
-.fh5co-cover .display-tc .fh5co-social-icons li a {
+.resume-cover .display-tc .fh5co-social-icons li a {
   color: #fff;
 }
 #resume-header  .display-tc .fh5co-social-icons li a i,
-.fh5co-cover .display-tc .fh5co-social-icons li a i {
+.resume-cover .display-tc .fh5co-social-icons li a i {
   font-size: 30px;
 }
-/* 没什么用 */
-
-/* #fh5co-features {
-  background: #FF9000;
-}
-#fh5co-features h2 {
-  color: #fff;
-}
-#fh5co-features .services-padding {
-  padding: 7em 0;
-}
-#fh5co-features .feature-left {
-  margin-bottom: 40px;
-  float: left;
-}
-@media screen and (max-width: 992px) {
-  #fh5co-features .feature-left {
-    margin-bottom: 30px;
-  }
-}
-#fh5co-features .feature-left .icon {
-  display: table;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  background: #fff;
-  margin-bottom: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-#fh5co-features .feature-left .icon i {
-  font-size: 50px;
-  display: table-cell;
-  vertical-align: middle;
-  height: 100px;
-  color: #FF9000 !important;
-}
-#fh5co-features .feature-left .feature-copy {
-  width: 100%;
-}
-#fh5co-features .feature-left h3 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #fff;
-}
-#fh5co-features .feature-left p {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
-}
-#fh5co-features .feature-left p:last-child {
-  margin-bottom: 0;
-}
-#fh5co-features .feature-left p a {
-  color: #000 !important;
-} */
 
 #about-me,
 #fh5co-resume,
@@ -330,6 +288,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .info-tro{
   padding: 0 10px;
+  padding-left: 10%;
 }
 .info {
   margin: 0;
@@ -357,9 +316,10 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
   color: #000;
   font-weight: bold;
+  margin-left: 10%;
 }
 .info li .second-block {
-  width: 60%;
+  width: 50%;
   display: inline-block;
   /* color: rgba(0, 0, 0, 0.5); */
   font-family: Microsoft YaHei;
@@ -436,6 +396,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   line-height: 1.5;
   color: #000;
+  font-family: Microsoft YaHei;
 }
 .heading p {
   font-size: 18px;
