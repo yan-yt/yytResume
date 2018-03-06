@@ -35,23 +35,27 @@
 		}
 	};
 
-	//背景占满整个浏览器
-	var fullHeight = function() {
-
-		if ( !isMobile.any() ) {//判断是否是移动端
-			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
-	};
-
 	// Parallax
 	var parallax = function() {
 		$(window).stellar();//视差滚动
 	};
 
-	var contentWayPoint = function() {
+
+	var pieChart = function() {
+		$('.chart').easyPieChart({
+			scaleColor: false,
+			lineWidth: 4,
+			lineCap: 'butt',
+			barColor: '#FF9000',
+			trackColor:	"#f5f5f5",
+			size: 100,
+			animate: 1000
+		});
+	};
+
+	
+	// $(function(){
+		//滚动
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
 
@@ -85,12 +89,7 @@
 			}
 
 		} , { offset: '85%' } );
-	};
-
-
-	//小箭头 返回顶部
-	var goToTop = function() {
-
+		//返回顶部
 		$('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
@@ -113,21 +112,24 @@
 
 		});
 	
-	};
 
-	var pieChart = function() {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 4,
-			lineCap: 'butt',
-			barColor: '#FF9000',
-			trackColor:	"#f5f5f5",
-			size: 100,
-			animate: 1000
+		//判断是否占满整个屏幕
+		if ( !isMobile.any() ) {//判断是否是移动端
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function(){
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+
+		//滑动
+		var $root = $('html, body');
+		$('#navbar-menu ul li a').click(function() {
+			$root.animate({
+				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+			}, 1000);
+			return false;
 		});
-	};
 
-	var skillsWayPoint = function() {
 		if ($('#fh5co-skills').length > 0 ) {
 			$('#fh5co-skills').waypoint( function( direction ) {
 										
@@ -137,24 +139,7 @@
 				}
 			} , { offset: '90%' } );
 		}
-
-	};
-
-
-	// Loading page
-	// var loaderPage = function() {
-	// 	$(".loadding").fadeOut("slow");
-	// };
-
-	
-	$(function(){
-		contentWayPoint();
-		goToTop();
-		fullHeight();
-		//parallax();
-		// pieChart();
-		skillsWayPoint();
-	});
+	// });
 
 
 }());
