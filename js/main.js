@@ -125,7 +125,7 @@
 		var $root = $('html, body');
 		$('#navbar-menu ul li a').click(function() {
 			$root.animate({
-				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 200
 			}, 1000);
 			return false;
 		});
