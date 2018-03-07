@@ -125,13 +125,13 @@
 		var $root = $('html, body');
 		$('#navbar-menu ul li a').click(function() {
 			$root.animate({
-				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 200
+				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 100
 			}, 1000);
 			return false;
 		});
 
-		if ($('#fh5co-skills').length > 0 ) {
-			$('#fh5co-skills').waypoint( function( direction ) {
+		if ($('#resume-skills').length > 0 ) {
+			$('#resume-skills').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( pieChart , 400);					
