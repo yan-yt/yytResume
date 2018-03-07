@@ -4,7 +4,6 @@
 
 	//loading
 	$(document).ready(
-
 		document.onreadystatechange = function(){
 			if(document.readyState === "complete"){
 				$(".loadding").fadeOut("slow");
@@ -84,7 +83,7 @@
 						},  k * 50, 'easeInOutExpo' );
 					});
 					
-				}, 50);
+				}, 200);
 				
 			}
 
