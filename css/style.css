@@ -816,3 +816,37 @@ input[type="text"] {
   margin: 12px 0;
   list-style: circle;
 }
+
+/* 校园经历 */
+.collage-position{
+  display: flex;
+  line-height: 40px;
+  padding: 20px 20px;
+  border: 2px solid #ffffff;
+}
+.collage-position:hover{
+  border: 2px solid #828282;
+  border-radius: 3px;
+}
+.collage-position > div{
+  justify-content: space-between;
+}
+.collage-position-head{
+  font-size: 32px;
+  margin: 25px 0;
+  width: 20%;
+}
+.collage-position-body{
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+}
+.collage-position:before {
+  top: 10px;
+  bottom: 10px;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #e6e6e6;
+  left: 15%;
+  margin-left: 0px;
+}
