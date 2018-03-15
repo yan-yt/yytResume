@@ -241,6 +241,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #resume-experience,
 #resume-skills,
 #resume-collage,
+#resume-produce,
 #resume-bottom{
   padding: 7em 0;
   clear: both;
@@ -250,6 +251,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #resume-experience,
   #resume-skills,
   #resume-collage,
+  #resume-produce，
   #resume-bottomd{
     padding: 3em 0;
   }
@@ -907,4 +909,17 @@ input[type="text"] {
 }
 .collage-other-body b{
   padding: 0;
+}
+
+/* 作品展示 */
+#resume-produce .produce-container{
+  /* background-color: #eee;
+  display: flex; */
+  align-items: center;
+}
+.produce-container{
+  padding: 5%;
+}
+.img-container img{
+  width: 60%;
 }
