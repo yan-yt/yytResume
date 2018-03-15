@@ -442,6 +442,9 @@ h1, h2, h3, h4, h5, h6, figure {
   .timeline > li > .timeline-panel {
     width: 85% !important;
   }
+  body{
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-panel {
@@ -814,9 +817,10 @@ input[type="text"] {
 
 /* 校园经历 */
 .collage-position{
-  line-height: 40px;
-  padding: 20px 20px;
+  display: flex;
+  align-items: center;
   border: 2px solid #ffffff;
+  padding: 3%;
 }
 .collage-position:hover{
   border: 2px solid #828282;
@@ -825,7 +829,7 @@ input[type="text"] {
 .collage-position-head{
   text-align: center;
   font-size: 24px;
-  line-height: 80px;
+  /* line-height: 80px; */
 }
 .collage-position:before {
   top: 10px;
@@ -839,9 +843,10 @@ input[type="text"] {
 }
 
 .collage-prize{
-  line-height: 40px;
-  padding: 20px 20px;
+  display: flex;
+  align-items: center;
   border: 2px solid #ffffff;
+  padding: 3%;
 }
 .collage-prize:hover{
   border: 2px solid #828282;
@@ -850,7 +855,7 @@ input[type="text"] {
 .collage-prize-head{
   text-align: center;
   font-size: 24px;
-  line-height: 120px;
+  /* line-height: 120px; */
 }
 .collage-prize:before {
   top: 10px;
@@ -865,4 +870,41 @@ input[type="text"] {
 .collage-prize-body{
   list-style: none;
   margin-bottom : 0;
+}
+.collage-prize-body b,
+.collage-prize-body span{
+  padding: 0;
+}
+
+.collage-other{
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffffff;
+  padding: 3%;
+}
+.collage-other:hover{
+  border: 2px solid #828282;
+  border-radius: 3px;
+}
+.collage-other-head{
+  text-align: center;
+  font-size: 24px;
+  /* line-height: 120px; */
+}
+.collage-other:before {
+  top: 10px;
+  bottom: 10px;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #e6e6e6;
+  left: 25%;
+  margin-left: 0px;
+}
+.collage-other-body{
+  list-style: none;
+  margin-bottom : 0;
+}
+.collage-other-body b{
+  padding: 0;
 }
