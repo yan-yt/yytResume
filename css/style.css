@@ -913,8 +913,6 @@ input[type="text"] {
 
 /* 作品展示 */
 #resume-produce .produce-container{
-  /* background-color: #eee;
-  display: flex; */
   align-items: center;
 }
 .produce-container{
