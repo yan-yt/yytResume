@@ -926,6 +926,12 @@ input[type="text"] {
 .produce-body{
   margin: 5% 0;
 }
+.produce-body ul li {
+  list-style: circle;
+}
 .produce-body h2{
   font-family: "Microsoft YaHei";
+}
+.QRcode{
+  width: 30%;
 }
