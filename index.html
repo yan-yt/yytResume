@@ -286,7 +286,7 @@
 	</div>
 
 	<!-- 作品展示 -->
-	<a href="#product"></a>
+	<a href="product"></a>
 	<div id="resume-produce" class="animate-box">
 			<div class="container">
 				<div class="row">
@@ -295,20 +295,40 @@
 					</div>
 				</div>
 
-				<div class="produce-container text-center">
-					<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="produce-container col-md-12 col-sm-12 col-xs-12">
+					<div class="produce-header col-md-6 col-sm-12 text-center">
 						<div class="img-container">
 							<a href="http://tgl.andoner.com/weixin/sonsume?openid=oYcBjs3fF3Q7_bNWnat_Kq2wt2KE&accessToken=7_zStjQ-sHZ_P8D_BPqRTv99blPLGgt-caAAD1EKB6nWi1e4DC7MJ_Rigs5t3nrMtmMBfay-du00pEIUC6yWMzXrR1Im9uw-OncyaTGVnuCws"><img src="images/dianzixiaopiao.png" alt=""></a>
 						</div>
-						<div>PS:建议使用手机查看</div>
 					</div>
-					<div class="col-md-6 col-sm-12 col-xs-12">
+
+					<div class="produce-body col-md-6 col-sm-12 col-xs-12">
+						<h2>电子小票详情页</h2>
+						<ul>
+							<li>利用媒值体查询实现响应式的布局,是页面适应大多数手机</li>
+							<li>由于页面主要是通过移动端查看，因此需要兼容ios和android两个主流系统的点击事件，例如：对于IOS设备，只监听click方法可能是没有响应的。解决方法就是监听 “touchend click”事件。而对于Android和PC，则只监听click事件即可</li>
+							<li>页面中英文切换使用css3 transform属性，通过rotateY定义沿着 Y 轴的 3D 旋转，实现动态切换效果</li>
+							<li>轮播图使用jQuery的Swiper插件，该插件可适配很多手机，功能强大，方便快捷</li>
+						</ul>
+						<a href="http://tgl.andoner.com/weixin/sonsume?openid=oYcBjs3fF3Q7_bNWnat_Kq2wt2KE&accessToken=7_zStjQ-sHZ_P8D_BPqRTv99blPLGgt-caAAD1EKB6nWi1e4DC7MJ_Rigs5t3nrMtmMBfay-du00pEIUC6yWMzXrR1Im9uw-OncyaTGVnuCws">demo地址推荐，使用手机查看</a>
+					</div>
+				</div>
+
+				<div class="produce-container col-md-12 col-sm-12 col-xs-12">
+					<div class="produce-header col-md-6 col-sm-12 text-center">
 						<div class="img-container">
 							<a href="https://www.supermapol.com/apps/viewer?action=create"><img src="images/measure.png" alt=""></a>
 						</div>
 					</div>
+					<div class="produce-body col-md-6 col-sm-12 col-xs-12">
+						<h2>在线制图</h2>
+						<ul>
+							<li>基于openlayers和leaflet的API提供的接口实现量算和鹰眼功能，由于地图有不同坐标系，因此先判断坐标系再进行计算</li>
+							<li>二级面板色带，用canvas绘制，通过判断数组中颜色数量，分段绘制</li>
+							<li>专题图条件过滤，将输入框中的筛选条件拼接成SQL语句，然后筛选结果逐一添加到数组中，最后统一绘制到地图上</li>
+						</ul>
+					</div>
 				</div>
-				
 
 
 			</div>

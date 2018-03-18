@@ -917,7 +917,15 @@ input[type="text"] {
 }
 .produce-container{
   padding: 5%;
+  background-color: #eee;
+  margin: 3% 0;
 }
 .img-container img{
   width: 60%;
+}
+.produce-body{
+  margin: 5% 0;
+}
+.produce-body h2{
+  font-family: "Microsoft YaHei";
 }
